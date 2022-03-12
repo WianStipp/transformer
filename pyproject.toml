@@ -2,10 +2,12 @@
 name = "transformer"
 version = "0.1.0"
 description = ""
-authors = ["Wian Stipp <stippwian@gmail.com>"]
+authors = ["Wian Stipp <stippwian@gmail.com>", "Arthur Böök <atte.book@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+jax = "^0.3.1"
+jaxlib = {url = "https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.0+cuda11.cudnn82-cp38-none-manylinux2010_x86_64.whl", extras = ["cuda114"]}
 
 [tool.poetry.dev-dependencies]
 
