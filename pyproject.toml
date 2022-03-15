@@ -5,9 +5,11 @@ description = ""
 authors = ["Wian Stipp <stippwian@gmail.com>", "Arthur Böök <atte.book@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8, <3.11"
 jax = "^0.3.1"
-jaxlib = {url = "https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.0+cuda11.cudnn82-cp38-none-manylinux2010_x86_64.whl", extras = ["cuda114"]}
+numpy = "^1.22.3"
+scipy = "^1.8.0"
+jaxlib = [{ version = "^0.3.0", markers = "sys_platform == 'darwin'"}, {url = "https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.0+cuda11.cudnn82-cp38-none-manylinux2010_x86_64.whl", extras = ["cuda114"], markers = "sys_platform == 'linux'"}]
 
 [tool.poetry.dev-dependencies]
 
