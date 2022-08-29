@@ -1,2 +1,2 @@
-# transformer
-Implementing a transformer from scratch in Jax and Torch.
+# Attention Is All You Need
+Implementing "Attention Is All You Need" Vaswani et al. from scratch in Jax and Torch.
